@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive iPhoto Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="toolbar">
+    <div>
+      <h1>Moments</h1>
+      <p class="date-range">7 Mar — 26 Apr 2017</p>
+    </div>
+    <div class="control">
+      <label for="filter">Filter by:</label>
+      <select id="filter">
+        <option value="all">All Items</option>
+        <option value="people">People</option>
+        <option value="places">Places</option>
+        <option value="tech">Tech</option>
+        <option value="nature">Nature</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-wrapper" aria-label="Interactive photo library">
+      <div class="gallery" id="gallery"></div>
+      <div class="hint">Scroll or drag to explore. Hover any tile to pop it forward.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
